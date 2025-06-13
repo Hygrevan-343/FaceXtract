@@ -1,6 +1,7 @@
+python-version>=3.9,<3.10
 streamlit>=1.32.0
 opencv-python-headless>=4.8.0
-numpy>=1.24.0,<2.0.0
+numpy>=1.24.0,<1.25.0
 Pillow>=10.0.0
 mtcnn>=0.1.1
-tensorflow-cpu==2.14.0  # Using CPU version with fixed version for compatibility 
+tensorflow==2.12.0  # Last stable version for Python 3.9 

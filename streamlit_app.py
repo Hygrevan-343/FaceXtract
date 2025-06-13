@@ -266,14 +266,14 @@ def process_images(uploaded_files, confidence_threshold: float) -> Tuple[bytes, 
             image_with_faces = draw_faces(image, detections)
             st.image(image_with_faces, 
                     caption=f"Detected {len(detections)} faces",
-                    use_column_width=True)
+                    use_container_width=True)
             
             faces = [extract_face(image, det) for det in detections]
             faces_by_image[str(idx)] = faces
             total_processed += len(faces)
         else:
             st.warning(f"No faces detected in image {idx}")
-            st.image(image, caption="No faces detected", use_column_width=True)
+            st.image(image, caption="No faces detected", use_container_width=True)
         
         progress_bar.progress((idx) / len(uploaded_files))
     

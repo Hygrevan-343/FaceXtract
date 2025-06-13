@@ -1,6 +1,6 @@
 streamlit>=1.32.0
-opencv-python-headless>=4.8.0  # Using headless version for cloud deployment
-numpy>=1.24.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0,<2.0.0
 Pillow>=10.0.0
 mtcnn>=0.1.1
-tensorflow>=2.15.0 
+tensorflow-cpu==2.14.0  # Using CPU version with fixed version for compatibility 

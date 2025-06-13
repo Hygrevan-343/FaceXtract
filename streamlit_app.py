@@ -317,7 +317,7 @@ def main():
             
             # Process button
             if st.button("Extract Faces", type="primary"):
-                with st.spinner("Processing images..."):
+                with st.spinner("Processing Images..."):
                     try:
                         # Process images and create ZIP
                         zip_data, processing_time = process_images(uploaded_files, confidence_threshold)
